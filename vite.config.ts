@@ -17,11 +17,12 @@ function escapeHtml(text: string): string {
 function siteContent(): Plugin {
   const file = resolve(projectRoot, 'content/site.json')
   const site = JSON.parse(readFileSync(file, 'utf8')) as SiteContent
+  const notice = escapeHtml(site.ownershipNotice)
 
   return {
     name: 'everfield-site-content',
-    transformIndexHtml: (html) =>
-      html.replaceAll('%OWNERSHIP_NOTICE%', escapeHtml(site.ownershipNotice)),
+    // A replacer function keeps any "$" in the copy literal.
+    transformIndexHtml: (html) => html.replaceAll('%OWNERSHIP_NOTICE%', () => notice),
   }
 }
 

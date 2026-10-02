@@ -27,8 +27,8 @@ const SOFTWARE_RENDERER = /swiftshader|llvmpipe|basic render|software/i
 const pagesName = resolveStage(process.env.SITE_STAGE) === STAGE_FULL ? 'pages' : 'holding'
 
 const TARGETS = [
-  { name: 'shell', outDir: 'dist', port: 4173 },
-  { name: pagesName, outDir: 'dist-pages', port: 4174 },
+  { name: 'shell', outDir: 'dist', port: 4183 },
+  { name: pagesName, outDir: 'dist-pages', port: 4184 },
 ]
 
 function stamp(date) {

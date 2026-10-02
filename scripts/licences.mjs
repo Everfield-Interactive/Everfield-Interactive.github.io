@@ -16,13 +16,17 @@ const lock = JSON.parse(await readFile(lockPath, 'utf8'))
 const rows = new Map()
 
 for (const [location, entry] of Object.entries(lock.packages)) {
-  // The empty key is the site's own package.
-  if (location === '') continue
+  // The empty key is the site's own package, and a link points at another entry.
+  if (location === '' || entry.link) continue
 
-  const name = location.slice(location.lastIndexOf('node_modules/') + 'node_modules/'.length)
+  const marker = 'node_modules/'
+  const at = location.lastIndexOf(marker)
+
+  const name = entry.name ?? (at === -1 ? location : location.slice(at + marker.length))
+  const version = entry.version ?? NOT_STATED
   const licence = entry.license ?? NOT_STATED
 
-  rows.set(`${name}@${entry.version}`, { name, version: entry.version, licence })
+  rows.set(`${name}@${version}`, { name, version, licence })
 }
 
 const sorted = [...rows.values()].sort(
