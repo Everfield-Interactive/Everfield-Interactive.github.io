@@ -1,0 +1,3 @@
+# Gitignored items that every Claude Code worktree needs.
+references/
+.claude/settings.local.json
