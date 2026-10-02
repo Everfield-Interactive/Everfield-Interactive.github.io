@@ -1,0 +1,24 @@
+# Markdown is never reformatted. This keeps docs/BUILD_GUIDE.md byte for byte.
+**/*.md
+LICENSE
+
+# Folders owned by the sibling workstreams
+src/vfx/
+src/materials/
+src/post/
+lab/vfx/
+content/legal/
+
+# Claude Code configuration and worktrees
+.claude/
+
+# Generated or third-party
+package-lock.json
+dist/
+dist-pages/
+public/
+assets-src/
+references/
+review/
+test-results/
+playwright-report/

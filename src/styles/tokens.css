@@ -1,0 +1,6 @@
+/* Starting values from Section 5.3 of the build guide. Phase 1 sets the final tokens. */
+
+:root {
+  --ink-900: #141313;
+  --porcelain-100: #e9eaeb;
+}
