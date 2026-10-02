@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc" font-family="Georgia, 'Times New Roman', serif">
+  <title id="title">World map of the title screen</title>
+  <desc id="desc">Eleven chapters joined by ten paths. The main path runs forward from the Field through the Ruins, the Monolith and the Core to the Clearing. Side paths lead left to the Crystal Wood and the Shard Desert, right to the Highlands and the Ring, and up to the Terraces. A hidden path leads from the Ruins to the Night Gate.</desc>
+
+  <rect width="1200" height="860" fill="#141313" />
+
+  <!-- Paths -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Main path -->
+    <path d="M600 700 V140" stroke="#BB9951" stroke-width="5" />
+    <!-- Side paths, open at the start -->
+    <path d="M600 700 H360" stroke="#BB9951" stroke-width="2" />
+    <path d="M600 560 H840" stroke="#BB9951" stroke-width="2" />
+    <!-- Side paths that a key opens -->
+    <path d="M360 700 H140" stroke="#BB9951" stroke-width="2" />
+    <path d="M840 560 H1060" stroke="#BB9951" stroke-width="2" />
+    <!-- Up path -->
+    <path d="M840 560 V400" stroke="#BB9951" stroke-width="2" stroke-dasharray="2 9" />
+    <!-- Hidden path -->
+    <path d="M600 560 H360" stroke="#921D22" stroke-width="2" stroke-dasharray="10 8" />
+    <!-- Entry and exit -->
+    <path d="M600 800 V728" stroke="#E9EAEB" stroke-width="1.5" stroke-dasharray="4 6" />
+    <path d="M628 140 H742" stroke="#E9EAEB" stroke-width="1.5" stroke-dasharray="4 6" />
+  </g>
+
+  <!-- Key marks on the paths that start locked -->
+  <g fill="#141313" stroke="#EECB75" stroke-width="1.5">
+    <path d="M250 690 l10 10 l-10 10 l-10 -10 z" />
+    <path d="M950 550 l10 10 l-10 10 l-10 -10 z" />
+    <path d="M840 470 l10 10 l-10 10 l-10 -10 z" />
+  </g>
+
+  <!-- Direction words -->
+  <g fill="#DDD6CD" font-size="14" font-style="italic">
+    <text x="612" y="634">forward</text>
+    <text x="612" y="494">forward</text>
+    <text x="612" y="354">forward, rising</text>
+    <text x="612" y="214">forward</text>
+    <text x="480" y="690" text-anchor="middle">left</text>
+    <text x="250" y="680" text-anchor="middle">left</text>
+    <text x="720" y="550" text-anchor="middle">right</text>
+    <text x="950" y="540" text-anchor="middle">right</text>
+    <text x="856" y="448">up</text>
+    <text x="480" y="550" text-anchor="middle" fill="#C98599">hidden</text>
+  </g>
+
+  <!-- Chapters -->
+  <g stroke="#BB9951" stroke-width="2" fill="#E9EAEB">
+    <circle cx="600" cy="700" r="22" />
+    <circle cx="600" cy="560" r="22" />
+    <circle cx="600" cy="420" r="22" />
+    <circle cx="600" cy="280" r="22" />
+    <circle cx="600" cy="140" r="22" />
+    <circle cx="360" cy="700" r="18" />
+    <circle cx="140" cy="700" r="18" />
+    <circle cx="840" cy="560" r="18" />
+    <circle cx="1060" cy="560" r="18" />
+    <circle cx="840" cy="400" r="18" />
+  </g>
+  <circle cx="360" cy="560" r="18" fill="#141313" stroke="#921D22" stroke-width="2" stroke-dasharray="5 5" />
+
+  <!-- Numerals -->
+  <g fill="#141313" font-size="17" text-anchor="middle">
+    <text x="600" y="706">01</text>
+    <text x="600" y="566">02</text>
+    <text x="600" y="426">03</text>
+    <text x="600" y="286">04</text>
+    <text x="600" y="146">05</text>
+    <text x="360" y="706" font-size="15">06</text>
+    <text x="140" y="706" font-size="15">07</text>
+    <text x="840" y="566" font-size="15">08</text>
+    <text x="1060" y="566" font-size="15">09</text>
+    <text x="840" y="406" font-size="15">10</text>
+  </g>
+  <text x="360" y="566" fill="#C98599" font-size="15" text-anchor="middle">11</text>
+
+  <!-- Names -->
+  <g fill="#E9EAEB" font-size="20">
+    <text x="566" y="746" text-anchor="end">The Field</text>
+    <text x="566" y="606" text-anchor="end">The Ruins</text>
+    <text x="566" y="426" text-anchor="end">The Monolith</text>
+    <text x="566" y="286" text-anchor="end">The Core</text>
+    <text x="566" y="146" text-anchor="end">The Clearing</text>
+    <text x="360" y="746" text-anchor="middle">The Crystal Wood</text>
+    <text x="140" y="746" text-anchor="middle">The Shard Desert</text>
+    <text x="840" y="606" text-anchor="middle">The Highlands</text>
+    <text x="1060" y="606" text-anchor="middle">The Ring</text>
+    <text x="840" y="370" text-anchor="middle">The Terraces</text>
+    <text x="360" y="524" text-anchor="middle" fill="#C98599">The Night Gate</text>
+  </g>
+
+  <!-- Entry and exit plates -->
+  <g fill="#E9EAEB" stroke="#BB9951" stroke-width="1.5">
+    <rect x="520" y="800" width="160" height="38" />
+    <rect x="742" y="121" width="170" height="38" />
+  </g>
+  <g fill="#141313" font-size="16" text-anchor="middle">
+    <text x="600" y="825">Landing page</text>
+    <text x="827" y="146">Main page</text>
+  </g>
+  <text x="685" y="130" fill="#DDD6CD" font-size="14" font-style="italic" text-anchor="middle">the die</text>
+
+  <!-- Legend -->
+  <g font-size="14" fill="#DDD6CD">
+    <path d="M40 60 H96" stroke="#BB9951" stroke-width="5" />
+    <text x="108" y="65">Main path, taken by scrolling forward</text>
+    <path d="M40 88 H96" stroke="#BB9951" stroke-width="2" />
+    <text x="108" y="93">Side path</text>
+    <path d="M40 116 H96" stroke="#BB9951" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round" />
+    <text x="108" y="121">Up path, taken by its marker</text>
+    <path d="M40 144 H96" stroke="#921D22" stroke-width="2" stroke-dasharray="10 8" />
+    <text x="108" y="149">Hidden path, opened by secrets</text>
+    <path d="M68 162 l10 10 l-10 10 l-10 -10 z" fill="#141313" stroke="#EECB75" stroke-width="1.5" />
+    <text x="108" y="177">Starts locked, and a key opens it (proposal)</text>
+  </g>
+  <text x="40" y="34" fill="#EECB75" font-size="18">The world</text>
+</svg>
