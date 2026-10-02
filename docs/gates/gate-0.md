@@ -6,14 +6,14 @@ Branch and commit: `main` is at `1d376b4`. The gate documents are on `phase-0-sc
 ## What to look at
 
 1. The live holding page at `https://everfield-interactive.github.io/`.
-2. The preflight table below. One item fails.
+2. The preflight table below. One item is half met.
 3. The two decisions at the end.
 
 ## Gate 0 conditions
 
 | Condition | Result |
 | --- | --- |
-| The preflight report is clean | Not yet. Item 8 fails: ffmpeg and the KTX tools are not installed |
+| The preflight report is clean | Fifteen items pass. Item 8 is half met: ffmpeg is installed, and the KTX tools are not |
 | A holding page in ink-900 with the notice is live at the Pages address | Met |
 | One Blender viewport screenshot proves the connection | Met |
 | Both sibling worktrees exist | Met |
@@ -41,7 +41,7 @@ Branch and commit: `main` is at `1d376b4`. The gate documents are on `phase-0-sc
 | 5 | The Blender connector | Pass | The session lists its tools |
 | 6 | A scene query, a viewport screenshot and the Blender version | Pass | 5.2.2 LTS |
 | 7 | The built-in browser opens the local site and captures it | Pass | No console errors |
-| 8 | ffmpeg and the KTX tools | Fail | Neither is installed |
+| 8 | ffmpeg and the KTX tools | Part | ffmpeg 9.0.2 is installed. The KTX tools are not, and winget has no package for them |
 | 9 | `references/set-01/` holds R01 to R20 | Pass | |
 | 10 | `everfield-source/` with its three folders | Pass | |
 | 11 | D6 to D9 answered and logged | Pass | |
@@ -58,7 +58,7 @@ Branch and commit: `main` is at `1d376b4`. The gate documents are on `phase-0-sc
 | Chrome on desktop | Opened the local build, through the screenshot harness |
 | The browser built into Claude Code | Opened the local build and the live address |
 | Edge on desktop | Untested |
-| Firefox on desktop | Untested. It is not installed |
+| Firefox on desktop | Untested. It is now installed |
 | Safari on iOS | Untested |
 | Chrome on Android | Untested |
 | Safari on desktop | Untested. It cannot run on Kiefy's computer |
@@ -102,5 +102,5 @@ Branch and commit: `main` is at `1d376b4`. The gate documents are on `phase-0-sc
 ## Result
 
 - [ ] Approved
-- [ ] Approved with changes:
+- [x] Approved with changes: Kiefy approved on 2 October 2026 after installing ffmpeg and Firefox. KTX-Software 4.4.2 is still to install from its releases page before Phase 2, which is the first phase that needs it (D40)
 - [ ] Not approved:
