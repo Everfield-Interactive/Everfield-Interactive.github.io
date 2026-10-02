@@ -55,3 +55,4 @@ Made by Kiefy on 2 October 2026, in answer to the onboarding report and the Phas
 | D36 | Commits carry no co-author trailer | Kiefy's choice for the public history |
 | D37 | Stack packages are installed in the phase that first uses each one. Phase 0 installs only the build, lint and screenshot tools. This changes Section 8.1 | The holding page uses none of the runtime libraries, and versions pinned early would be stale by the time they are needed |
 | D38 | TypeScript is pinned to 6.0.3 until type-aware linting supports version 7. This changes Section 8.1 | `typescript-eslint` supports TypeScript below 6.1 only |
+| D39 | The holding page is approved as captured at the four sizes: the ink-900 ground, with the interim line at the bottom left in the system serif at 14 px. The approval covers the holding page only | Kiefy approved the captures before the page went public |

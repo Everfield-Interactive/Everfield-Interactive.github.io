@@ -23,7 +23,7 @@ Phase 0, preflight and scaffold. Gate 0 is not yet proposed.
 
 ## Next
 
-1. Kiefy looks at the holding page captures.
+1. Kiefy switches the Pages source to GitHub Actions.
 2. Move `main` and check the live address.
 3. Create the `vfx` and `legal` worktrees.
 4. Run the preflight again and write the Gate 0 review.
@@ -32,7 +32,7 @@ Phase 0, preflight and scaffold. Gate 0 is not yet proposed.
 
 | Item | Waits for |
 | --- | --- |
-| The first push to `main` | Kiefy switches the Pages source to GitHub Actions and approves the holding page captures |
+| The first push to `main` | Kiefy switches the Pages source to GitHub Actions. It is still set to deploy from a branch |
 | The final preflight | Kiefy installs ffmpeg, the KTX tools and Firefox, and opens Blender on an empty file |
 
 ## Environment
@@ -50,7 +50,7 @@ None yet.
 
 ## Notes
 
-- Work is on the branch `phase-0-scaffold`.
+- Work is on the branch `phase-0-scaffold`, which is pushed. Its build passes on GitHub. Kiefy approved the holding page captures (D39).
 - Until `main` moves, the repository page still shows the earlier licence, and the public address still shows GitHub's own page built from the first README.
 - The published output is built by `npm run build:pages` into `dist-pages/`. The Phase 0 plan called this script `build:holding`. The name changed because the same script builds the site once the stage is `full`.
 - Section 2.2 of the guide still lists Q9, Q10 and Q11 as open. Kiefy answered them on 2 October 2026 (D22, D25, D24). Changes to the guide come through Kiefy.
