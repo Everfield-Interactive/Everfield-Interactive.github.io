@@ -1,7 +1,7 @@
 /*
  * Colour tokens from Section 5.3 of the build guide.
  * Each value was sampled from the reference it names, and Phase 1 checked every one
- * against that image. They become final when Kiefy approves the style bible at Gate 1.
+ * against that image. Kiefy approved them with the style bible at Gate 1.
  */
 
 :root {
@@ -22,6 +22,8 @@
 
   /* Cobalt: filigree and links on porcelain */
   --cobalt-600: #395a9f;
+
+  /* Not in the default look (D44). Kept for a cosmetic reward. */
   --cobalt-500: #2054d3;
 
   /* Geode: inside breaks, focus and active states */
@@ -47,6 +49,10 @@
   --night-800: #1e2d46;
   --night-500: #415a83;
   --night-200: #80a3ca;
+
+  /* Type: the pairing chosen at Gate 1 (D43) */
+  --font-display: 'Bodoni Moda Variable', ui-serif, Georgia, serif;
+  --font-text: 'Jost Variable', ui-sans-serif, system-ui, sans-serif;
 
   /* Layout, from Section 5.6 */
   --margin-outer: clamp(24px, 5vw, 96px);

@@ -95,6 +95,6 @@ Changes to the guide come through Kiefy. These rows in Section 4 describe the im
 
 ## Result
 
-- [ ] Approved
+- [x] Approved on 2 October 2026 with the recommended option for every decision (D42 to D51). Kiefy may revisit any of them
 - [ ] Approved with changes:
 - [ ] Not approved:

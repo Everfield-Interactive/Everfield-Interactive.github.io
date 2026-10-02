@@ -24,13 +24,6 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 - Options: (1) One small world file with the camera clips and the empties, and one file for each chapter. (2) One world file that holds everything. (3) One file for each asset.
 - Recommended: 1. It matches the transfer budget for each chapter and lets each chapter load as the visitor approaches.
 
-## Q16. Does the fixed frame count towards the limit of two kinds of ornament?
-
-- Needed by: Gate 1
-- Section 5.5 allows two kinds in one view. The frame in 5.6 already shows a dial and a row of moon phases, and the mark has a glyph ring.
-- Options: (1) The limit applies to the plate and its content. The frame is counted apart. (2) The frame counts, and chapter progress becomes a plain numeral.
-- Recommended: 1. The frame is the same in every view, so it reads as part of the page.
-
 ## Q17. What does a direct link to a locked or hidden chapter do?
 
 - Needed by: Phase 3
@@ -82,13 +75,6 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 - Section 14.1 gives the legal workstream `legal/`, and Section 14.5 puts the drafts in `everfield-source/legal/`. Section 8.2 lists no `legal/` folder in the repository.
 - Options: (1) `legal/` means `everfield-source/legal/`. The repository holds only `content/legal/` and the notice files. (2) The repository gets its own `legal/` folder.
 - Recommended: 1. Phase 0 follows this reading and creates no `legal/` folder in the repository.
-
-## Q25. Does the lead build need a brief in `docs/workstreams/`?
-
-- Needed by: Phase 1
-- Section 14.2 gives each workstream a brief. Phase 0 and the checklist in 13.6 name only the two sibling briefs.
-- Options: (1) `CLAUDE.md` and `docs/STATUS.md` serve as the lead's brief. (2) Add `docs/workstreams/lead.md` with the lead's scope, folders and current tasks.
-- Recommended: 1. Both files already load at the start of every lead session.
 
 ## Q26. Where does the EULA appear?
 

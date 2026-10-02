@@ -1,9 +1,5 @@
 import '@fontsource-variable/bodoni-moda/opsz.css'
-import '@fontsource-variable/eb-garamond/index.css'
-import '@fontsource-variable/cormorant/index.css'
 import '@fontsource-variable/jost/index.css'
-import '@fontsource/marcellus/400.css'
-import '@fontsource-variable/cormorant-garamond/index.css'
 
 interface Pairing {
   id: string
@@ -14,32 +10,8 @@ interface Pairing {
   textFamily: string
 }
 
+// The pairing Kiefy approved at Gate 1 (D43). The other three that were tested are in review/gate-1/.
 const PAIRINGS: Pairing[] = [
-  {
-    id: 'A',
-    display: 'Bodoni Moda',
-    displayFamily: "'Bodoni Moda Variable', serif",
-    displayWeight: 500,
-    text: 'EB Garamond',
-    textFamily: "'EB Garamond Variable', serif",
-  },
-  {
-    id: 'B',
-    display: 'Cormorant',
-    displayFamily: "'Cormorant Variable', serif",
-    displayWeight: 500,
-    text: 'Jost',
-    textFamily: "'Jost Variable', sans-serif",
-  },
-  {
-    id: 'C',
-    display: 'Marcellus',
-    displayFamily: "'Marcellus', serif",
-    displayWeight: 400,
-    text: 'Cormorant Garamond',
-    textFamily: "'Cormorant Garamond Variable', serif",
-  },
-  // An extra pairing beyond the three in Section 5.4: the display of A with the text of B.
   {
     id: 'D',
     display: 'Bodoni Moda',

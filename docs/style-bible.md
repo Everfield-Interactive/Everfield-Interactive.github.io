@@ -1,6 +1,6 @@
 # Style bible: Gilt Fracture
 
-Status: proposed for Gate 1. Nothing here is final until Kiefy approves it.
+Status: approved at Gate 1 on 2 October 2026 (D42 to D50). Kiefy may revisit any part of it.
 
 This document refines Section 5 of the build guide into rules that can be built from. Every image in `references/` was studied for it, and every colour token was checked against the image it names.
 
@@ -103,7 +103,7 @@ Every value below was sampled from the reference it names. Phase 1 measured each
 | gilt-500 | #BB9951 | R18 | Seams, rules, accents on ink |
 | gilt-700 | #A16B18 | R04 | Gilt in shadow |
 | cobalt-600 | #395A9F | R18 | Filigree, links on porcelain |
-| cobalt-500 | #2054D3 | R23 | A brighter filigree, under test at Gate 1 |
+| cobalt-500 | #2054D3 | R23 | Not in the default look (D44). Kept for a cosmetic reward |
 | geode-700 | #225B7F | R18 | Geode depth |
 | geode-500 | #30949C | R18 | Geode body, active states |
 | geode-300 | #48CECD | R18 | Glints, focus rings on ink |
@@ -141,17 +141,16 @@ Every value below was sampled from the reference it names. Phase 1 measured each
 | crimson-600 | porcelain-100 | 7.2 to 1 | A secret's mark as text on a plate |
 | gilt-500 | ink-900 | 6.9 to 1 | Accent text on ink |
 | cobalt-600 | porcelain-100 | 5.6 to 1 | Link on a plate |
-| cobalt-500 | porcelain-100 | 5.3 to 1 | Link on a plate, under test |
 | gilt-500 | porcelain-100 | 2.2 to 1 | Ornament only. Never text |
 | crimson-600 | ink-900 | 2.1 to 1 | A fill inside a gilt edge only. Never text |
 
-`lab/palette/` shows every token, works out each ratio from the stylesheet, and holds the cobalt test.
+`lab/palette/` shows every token and works out each ratio from the stylesheet.
 
 ## 7. Type
 
 - The wordmark is custom lettering, drawn in Phase 4 in the direction of R02 and R03. Until then the studio name is set in the display face.
 - The site uses two families at most, plus the wordmark. Font files are hosted with the site.
-- `lab/type/` sets four pairings in text that already exists. Kiefy picks one at Gate 1.
+- The chosen pairing is D: Bodoni Moda for display and Jost for text (D43). `lab/type/` shows it in text that already exists.
 
 | Pairing | Display | Text | What it gives |
 | --- | --- | --- | --- |
@@ -260,7 +259,7 @@ Shading is painted into the textures or made by a colour ramp. There is no photo
 
 ## 15. Proposals in this document
 
-Each of these changes or adds to Section 5 of the guide. Kiefy rules on each at Gate 1, in `docs/gates/gate-1.md`.
+Each of these changes or adds to Section 5 of the guide. All seven were approved at Gate 1, as recorded in `docs/gates/gate-1.md`.
 
 | # | Proposal | Where |
 | --- | --- | --- |
