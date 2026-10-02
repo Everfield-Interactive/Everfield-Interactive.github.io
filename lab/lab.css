@@ -1,0 +1,62 @@
+/* Shared frame for the lab pages. Lab pages are local test pages and are never published. */
+
+@import '../src/styles/tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--ink-900);
+  color: var(--porcelain-100);
+  font-family: ui-serif, Georgia, 'Times New Roman', serif;
+  line-height: 1.55;
+}
+
+.lab-header {
+  padding: 32px var(--margin-outer) 16px;
+  border-bottom: 1px solid var(--gilt-500);
+}
+
+.lab-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.lab-header p {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  color: var(--haze-300);
+  max-width: 65ch;
+}
+
+.lab-section {
+  padding: 32px var(--margin-outer);
+}
+
+.lab-section > h2 {
+  margin: 0 0 16px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--gilt-300);
+}
+
+.lab-note {
+  margin: 0 0 16px;
+  font-size: 0.875rem;
+  color: var(--haze-300);
+  max-width: 65ch;
+}
+
+a {
+  color: var(--geode-300);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--geode-300);
+  outline-offset: 2px;
+}

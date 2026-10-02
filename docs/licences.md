@@ -20,7 +20,7 @@ The lead's record of every third-party item and its licence. Each licence is con
 
 All nine are development tools. None of their code ships to a visitor.
 
-The lockfile holds 140 packages once the tools' own dependencies are counted. Their licences are MIT, Apache-2.0, ISC, BSD-2-Clause and BSD-3-Clause, with two exceptions.
+The lockfile holds 146 packages once the tools' own dependencies and the six font packages are counted. Apart from the fonts, their licences are MIT, Apache-2.0, ISC, BSD-2-Clause and BSD-3-Clause, with two exceptions.
 
 | Package | Licence | Why it is present |
 | --- | --- | --- |
@@ -29,10 +29,16 @@ The lockfile holds 140 packages once the tools' own dependencies are counted. Th
 
 ## Fonts
 
-None yet. The type pairing is chosen at Gate 1.
+Six candidate families are installed as development packages for the type test in `lab/type/`. None ships yet. After Kiefy picks a pairing at Gate 1, the chosen families are hosted with the site and the others are removed.
 
 | Font | Licence | Source | Checked on |
 | --- | --- | --- | --- |
+| Bodoni Moda | SIL Open Font Licence 1.1 | `@fontsource-variable/bodoni-moda` 5.3.0 | 2 October 2026 |
+| EB Garamond | SIL Open Font Licence 1.1 | `@fontsource-variable/eb-garamond` 5.3.0 | 2 October 2026 |
+| Cormorant | SIL Open Font Licence 1.1 | `@fontsource-variable/cormorant` 5.3.0 | 2 October 2026 |
+| Jost | SIL Open Font Licence 1.1 | `@fontsource-variable/jost` 5.3.0 | 2 October 2026 |
+| Marcellus | SIL Open Font Licence 1.1 | `@fontsource/marcellus` 5.3.0 | 2 October 2026 |
+| Cormorant Garamond | SIL Open Font Licence 1.1 | `@fontsource-variable/cormorant-garamond` 5.3.0 | 2 October 2026 |
 
 ## Assets
 

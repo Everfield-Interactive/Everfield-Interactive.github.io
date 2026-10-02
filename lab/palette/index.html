@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="data:," />
+    <title>Palette</title>
+    <link rel="stylesheet" href="../lab.css" />
+    <link rel="stylesheet" href="./palette.css" />
+  </head>
+  <body>
+    <header class="lab-header">
+      <h1>Palette</h1>
+      <p>
+        Every colour token, the reference it was sampled from, and what it is for. The values are
+        read from the stylesheet, so this page always shows what the site uses.
+      </p>
+    </header>
+
+    <main>
+      <section class="lab-section">
+        <h2>Tokens</h2>
+        <div id="swatches" class="swatches"></div>
+      </section>
+
+      <section class="lab-section">
+        <h2>Text pairs</h2>
+        <p class="lab-note">
+          The ratio is worked out on this page from the token values. Body text needs 4.5 to 1.
+          Ornament needs none.
+        </p>
+        <div id="pairs" class="pairs"></div>
+      </section>
+
+      <section class="lab-section">
+        <h2>Cobalt test</h2>
+        <p class="lab-note">
+          The same filigree and link in cobalt-600 and in cobalt-500, on porcelain. Section 5.3 asks
+          for this choice at Gate 1.
+        </p>
+        <div id="cobalt" class="cobalt"></div>
+      </section>
+
+      <section class="lab-section">
+        <h2>Proportion</h2>
+        <p class="lab-note">
+          Ink or porcelain carries the frame, gilt marks the seam, and geode stays under about 5%.
+          Crimson appears only where a secret is hinted or found.
+        </p>
+        <div class="proportion" aria-hidden="true">
+          <span style="flex: 72; background: var(--ink-900)"></span>
+          <span style="flex: 20; background: var(--porcelain-100)"></span>
+          <span style="flex: 4; background: var(--gilt-500)"></span>
+          <span style="flex: 3; background: var(--geode-500)"></span>
+          <span style="flex: 1; background: var(--crimson-600)"></span>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

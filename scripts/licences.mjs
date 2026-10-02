@@ -1,5 +1,6 @@
 // Writes the package list in THIRD_PARTY_NOTICES.md from package-lock.json.
-// With --check it compares instead of writing, and fails on any difference.
+// Only the block between the two markers is generated. The legal workstream owns the rest.
+// With --check it compares that block instead of writing, and fails on any difference.
 
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
@@ -10,6 +11,8 @@ const lockPath = resolve(root, 'package-lock.json')
 const noticesPath = resolve(root, 'THIRD_PARTY_NOTICES.md')
 
 const NOT_STATED = '[NOT STATED IN THE LOCKFILE]'
+const START = '<!-- packages:start -->'
+const END = '<!-- packages:end -->'
 
 const lock = JSON.parse(await readFile(lockPath, 'utf8'))
 
@@ -33,36 +36,46 @@ const sorted = [...rows.values()].sort(
   (a, b) => a.name.localeCompare(b.name, 'en') || a.version.localeCompare(b.version, 'en'),
 )
 
-const lines = [
-  '# Third-party notices',
-  '',
-  'This list is generated from `package-lock.json` by `npm run licences`.',
+const block = [
+  START,
   '',
   '| Package | Version | Licence |',
   '| --- | --- | --- |',
   ...sorted.map((row) => `| ${row.name} | ${row.version} | ${row.licence} |`),
   '',
-]
+  END,
+].join('\n')
 
-const generated = lines.join('\n')
-const unstated = sorted.filter((row) => row.licence === NOT_STATED)
+const fresh = [
+  '# Third-party notices',
+  '',
+  'The package list below is generated from `package-lock.json` by `npm run licences`.',
+  '',
+  block,
+  '',
+].join('\n')
 
-for (const row of unstated) {
+for (const row of sorted.filter((item) => item.licence === NOT_STATED)) {
   console.warn(`No licence in the lockfile for ${row.name}@${row.version}`)
 }
 
-if (process.argv.includes('--check')) {
-  const current = await readFile(noticesPath, 'utf8').catch(() => '')
+const current = (await readFile(noticesPath, 'utf8').catch(() => '')).replaceAll('\r\n', '\n')
+const from = current.indexOf(START)
+const to = current.indexOf(END)
+const hasBlock = from !== -1 && to > from
 
-  if (current.replaceAll('\r\n', '\n') !== generated) {
+if (process.argv.includes('--check')) {
+  if (!hasBlock || current.slice(from, to + END.length) !== block) {
     console.error(
-      'THIRD_PARTY_NOTICES.md does not match package-lock.json. Run "npm run licences".',
+      'The package list in THIRD_PARTY_NOTICES.md does not match package-lock.json. Run "npm run licences".',
     )
     process.exit(1)
   }
 
   console.log(`THIRD_PARTY_NOTICES.md matches the lockfile (${sorted.length} packages).`)
 } else {
-  await writeFile(noticesPath, generated)
+  const next = hasBlock ? current.slice(0, from) + block + current.slice(to + END.length) : fresh
+
+  await writeFile(noticesPath, next)
   console.log(`Wrote ${sorted.length} packages to THIRD_PARTY_NOTICES.md`)
 }

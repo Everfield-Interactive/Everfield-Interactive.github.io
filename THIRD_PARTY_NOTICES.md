@@ -1,6 +1,8 @@
 # Third-party notices
 
-This list is generated from `package-lock.json` by `npm run licences`.
+The package list below is generated from `package-lock.json` by `npm run licences`.
+
+<!-- packages:start -->
 
 | Package | Version | Licence |
 | --- | --- | --- |
@@ -14,6 +16,12 @@ This list is generated from `package-lock.json` by `npm run licences`.
 | @eslint/js | 10.0.1 | MIT |
 | @eslint/object-schema | 3.0.5 | Apache-2.0 |
 | @eslint/plugin-kit | 0.7.3 | Apache-2.0 |
+| @fontsource-variable/bodoni-moda | 5.3.0 | OFL-1.1 |
+| @fontsource-variable/cormorant | 5.3.0 | OFL-1.1 |
+| @fontsource-variable/cormorant-garamond | 5.3.0 | OFL-1.1 |
+| @fontsource-variable/eb-garamond | 5.3.0 | OFL-1.1 |
+| @fontsource-variable/jost | 5.3.0 | OFL-1.1 |
+| @fontsource/marcellus | 5.3.0 | OFL-1.1 |
 | @humanfs/core | 0.19.2 | Apache-2.0 |
 | @humanfs/node | 0.16.8 | Apache-2.0 |
 | @humanfs/types | 0.15.0 | Apache-2.0 |
@@ -144,3 +152,5 @@ This list is generated from `package-lock.json` by `npm run licences`.
 | which | 2.0.2 | ISC |
 | word-wrap | 1.2.5 | MIT |
 | yocto-queue | 0.1.0 | MIT |
+
+<!-- packages:end -->

@@ -1,0 +1,94 @@
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.swatch {
+  margin: 0;
+  border: 1px solid var(--slate-500);
+  background: var(--ink-700);
+}
+
+.swatch-chip {
+  height: 88px;
+}
+
+.swatch figcaption {
+  padding: 10px 12px 12px;
+  font-size: 0.8125rem;
+}
+
+.swatch-name {
+  display: block;
+  font-size: 1rem;
+}
+
+.swatch-meta {
+  display: block;
+  color: var(--haze-300);
+}
+
+.swatch-group {
+  grid-column: 1 / -1;
+  margin: 16px 0 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--haze-300);
+}
+
+.pairs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.pair {
+  padding: 20px;
+  border: 1px solid var(--slate-500);
+}
+
+.pair-sample {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.pair-meta {
+  margin: 8px 0 0;
+  font-size: 0.8125rem;
+}
+
+.cobalt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.cobalt-plate {
+  padding: 24px;
+  background: var(--porcelain-100);
+  color: var(--ink-900);
+}
+
+.cobalt-plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cobalt-plate p {
+  margin: 12px 0 0;
+  font-size: 1.125rem;
+}
+
+.cobalt-plate small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8125rem;
+}
+
+.proportion {
+  display: flex;
+  height: 72px;
+  border: 1px solid var(--slate-500);
+}

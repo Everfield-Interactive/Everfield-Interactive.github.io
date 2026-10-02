@@ -1,6 +1,54 @@
-/* Starting values from Section 5.3 of the build guide. Phase 1 sets the final tokens. */
+/*
+ * Colour tokens from Section 5.3 of the build guide.
+ * Each value was sampled from the reference it names, and Phase 1 checked every one
+ * against that image. They become final when Kiefy approves the style bible at Gate 1.
+ */
 
 :root {
+  /* Ink: grounds, silhouettes and text */
   --ink-900: #141313;
+  --ink-700: #1d1c1e;
+  --slate-500: #474c50;
+
+  /* Porcelain and paper */
   --porcelain-100: #e9eaeb;
+  --bone-200: #dee0d6;
+  --haze-300: #ddd6cd;
+
+  /* Gilt: seams, rules and accents */
+  --gilt-300: #eecb75;
+  --gilt-500: #bb9951;
+  --gilt-700: #a16b18;
+
+  /* Cobalt: filigree and links on porcelain */
+  --cobalt-600: #395a9f;
+  --cobalt-500: #2054d3;
+
+  /* Geode: inside breaks, focus and active states */
+  --geode-700: #225b7f;
+  --geode-500: #30949c;
+  --geode-300: #48cecd;
+
+  /* The painted world */
+  --wheat-500: #e8b548;
+  --wheat-700: #d09427;
+  --meadow-300: #ccd625;
+  --meadow-500: #76a85c;
+  --meadow-800: #2a5a39;
+  --moss-600: #6a754a;
+  --dust-500: #a57b5c;
+
+  /* Crimson: the mark of a secret, and the Crystal Wood */
+  --crimson-600: #921d22;
+  --crimson-800: #4e131d;
+  --magenta-500: #a04482;
+
+  /* Night: a cosmetic palette that a secret unlocks */
+  --night-800: #1e2d46;
+  --night-500: #415a83;
+  --night-200: #80a3ca;
+
+  /* Layout, from Section 5.6 */
+  --margin-outer: clamp(24px, 5vw, 96px);
+  --grid-columns: 12;
 }

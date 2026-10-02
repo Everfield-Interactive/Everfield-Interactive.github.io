@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="data:," />
+    <title>Layout sheet: the Field</title>
+    <link rel="stylesheet" href="../lab.css" />
+    <style>
+      .sheets {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: flex-start;
+        overflow-x: auto;
+      }
+
+      .sheet {
+        margin: 0;
+        flex: none;
+      }
+
+      .sheet svg {
+        display: block;
+        border: 1px solid var(--slate-500);
+      }
+
+      .sheet figcaption {
+        padding-top: 8px;
+        font-size: 0.875rem;
+        color: var(--haze-300);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="lab-header">
+      <h1>Layout sheet: Chapter 1, the Field</h1>
+      <p>
+        A plan of the frame, not a picture of it. It shows the subject, the type block and the frame
+        items at the two sizes Section 5.6 asks for. Type is shown in the system serif, because the
+        pairing is chosen at Gate 1. Kiefy approves the sheets at Gate 3.
+      </p>
+    </header>
+
+    <main class="lab-section">
+      <div class="sheets">
+        <figure class="sheet">
+          <svg
+            width="1440"
+            height="900"
+            viewBox="0 0 1440 900"
+            font-family="Georgia, 'Times New Roman', serif"
+            role="img"
+            aria-label="Layout of the Field at 1440 by 900"
+          >
+            <!-- Sky and field -->
+            <rect width="1440" height="520" fill="#2b2b2e" />
+            <rect y="520" width="1440" height="380" fill="#3a352a" />
+            <path d="M0 520 H1440" stroke="#BB9951" stroke-width="1" />
+
+            <!-- Twelve columns inside the outer margin -->
+            <g fill="#ffffff" opacity="0.035">
+              <rect x="72" width="86" height="900" />
+              <rect x="182" width="86" height="900" />
+              <rect x="292" width="86" height="900" />
+              <rect x="402" width="86" height="900" />
+              <rect x="512" width="86" height="900" />
+              <rect x="622" width="86" height="900" />
+              <rect x="732" width="86" height="900" />
+              <rect x="842" width="86" height="900" />
+              <rect x="952" width="86" height="900" />
+              <rect x="1062" width="86" height="900" />
+              <rect x="1172" width="86" height="900" />
+              <rect x="1282" width="86" height="900" />
+            </g>
+
+            <!-- Thirds -->
+            <g stroke="#DDD6CD" stroke-width="1" stroke-dasharray="3 9" opacity="0.5">
+              <path d="M480 0 V900 M960 0 V900" />
+            </g>
+
+            <!-- Subject: the path leading in, and the far monolith -->
+            <path
+              d="M700 900 C 860 760 1010 620 1128 522 L1150 522 C 1090 640 1010 770 940 900 Z"
+              fill="#5a4a2c"
+            />
+            <g fill="#474C50" opacity="0.85">
+              <path d="M1150 130 L1176 180 V300 H1124 V180 Z" />
+              <path d="M1124 336 H1176 V440 L1150 486 L1124 440 Z" />
+            </g>
+            <circle cx="1150" cy="318" r="7" fill="#30949C" />
+            <g fill="none" stroke="#BB9951" stroke-width="1.5">
+              <path d="M1124 300 l10 6 l8 -5 l12 7 l10 -6 l12 -2" />
+              <path d="M1124 336 l12 -5 l9 6 l11 -7 l10 5 l10 1" />
+            </g>
+            <rect
+              x="972"
+              y="96"
+              width="396"
+              height="716"
+              fill="none"
+              stroke="#EECB75"
+              stroke-width="1"
+              stroke-dasharray="6 6"
+            />
+            <text x="984" y="120" fill="#EECB75" font-size="15">Subject, right third</text>
+            <text x="984" y="140" fill="#DDD6CD" font-size="13" font-style="italic">
+              The path leads in to the monolith, a faint silhouette.
+            </text>
+
+            <!-- Calm area -->
+            <rect
+              x="500"
+              y="96"
+              width="440"
+              height="380"
+              fill="none"
+              stroke="#DDD6CD"
+              stroke-width="1"
+              stroke-dasharray="2 8"
+              opacity="0.7"
+            />
+            <text x="512" y="120" fill="#DDD6CD" font-size="15">Empty space</text>
+            <text x="512" y="140" fill="#DDD6CD" font-size="13" font-style="italic">
+              Sky and haze. The camera keeps this area calm.
+            </text>
+
+            <!-- Type block: a porcelain plate with one broken, gilded edge -->
+            <path
+              d="M72 300 H452 L470 352 L446 398 L468 452 L442 520 L466 590 L448 650 L470 708 L452 760 H72 Z"
+              fill="#E9EAEB"
+            />
+            <path
+              d="M452 300 L470 352 L446 398 L468 452 L442 520 L466 590 L448 650 L470 708 L452 760"
+              fill="none"
+              stroke="#BB9951"
+              stroke-width="3"
+            />
+            <g fill="#141313">
+              <text x="104" y="392" font-size="72" fill="#A16B18">01</text>
+              <text x="104" y="478" font-size="62" letter-spacing="-1">Everfield</text>
+              <text x="104" y="544" font-size="62" letter-spacing="-1">Interactive</text>
+              <text x="104" y="592" font-size="14">Chapter 01 of 11</text>
+              <text x="104" y="646" font-size="18">[PITCH: one or two lines,</text>
+              <text x="104" y="674" font-size="18">from Kiefy]</text>
+            </g>
+            <text x="72" y="286" fill="#EECB75" font-size="15">
+              Type block, left third, on a plate
+            </text>
+
+            <!-- Frame items -->
+            <g fill="none" stroke="#E9EAEB" stroke-width="1.5">
+              <circle cx="96" cy="60" r="24" />
+              <circle cx="1344" cy="60" r="24" />
+              <path d="M1344 36 V46 M1344 74 V84 M1320 60 H1330 M1358 60 H1368" />
+              <rect x="72" y="822" width="54" height="34" />
+              <rect x="1292" y="822" width="76" height="34" />
+            </g>
+            <g fill="#E9EAEB" font-size="13" text-anchor="middle">
+              <text x="96" y="65">Mark</text>
+              <text x="1344" y="65">Dial</text>
+              <text x="99" y="844">Ledger</text>
+              <text x="1330" y="844">Options</text>
+            </g>
+            <!-- Chapter progress: eleven discs -->
+            <g fill="none" stroke="#BB9951" stroke-width="1.5">
+              <circle cx="152" cy="839" r="7" fill="#BB9951" />
+              <circle cx="174" cy="839" r="7" />
+              <circle cx="196" cy="839" r="7" />
+              <circle cx="218" cy="839" r="7" />
+              <circle cx="240" cy="839" r="7" />
+              <circle cx="262" cy="839" r="7" />
+              <circle cx="284" cy="839" r="7" />
+              <circle cx="306" cy="839" r="7" />
+              <circle cx="328" cy="839" r="7" />
+              <circle cx="350" cy="839" r="7" />
+              <circle cx="372" cy="839" r="7" />
+            </g>
+            <text x="392" y="844" fill="#DDD6CD" font-size="13" font-style="italic">
+              Chapter progress
+            </text>
+          </svg>
+          <figcaption>1440 by 900. Subject right, type left, sky empty between them.</figcaption>
+        </figure>
+
+        <figure class="sheet">
+          <svg
+            width="390"
+            height="844"
+            viewBox="0 0 390 844"
+            font-family="Georgia, 'Times New Roman', serif"
+            role="img"
+            aria-label="Layout of the Field at 390 by 844"
+          >
+            <!-- The world fills the top -->
+            <rect width="390" height="320" fill="#2b2b2e" />
+            <rect y="320" width="390" height="524" fill="#3a352a" />
+            <path d="M0 320 H390" stroke="#BB9951" stroke-width="1" />
+
+            <path
+              d="M120 480 C 170 420 215 360 252 322 L264 322 C 250 370 232 430 214 480 Z"
+              fill="#5a4a2c"
+            />
+            <g fill="#474C50" opacity="0.85">
+              <path d="M262 96 L278 128 V196 H246 V128 Z" />
+              <path d="M246 220 H278 V280 L262 308 L246 280 Z" />
+            </g>
+            <circle cx="262" cy="208" r="5" fill="#30949C" />
+            <text x="24" y="118" fill="#EECB75" font-size="13">Subject</text>
+            <text x="24" y="136" fill="#DDD6CD" font-size="12" font-style="italic">
+              Portrait framing
+            </text>
+            <text x="24" y="152" fill="#DDD6CD" font-size="12" font-style="italic">
+              moves it to the centre.
+            </text>
+
+            <!-- The plate becomes a sheet, at most half the height -->
+            <path
+              d="M0 476 L40 468 L84 480 L130 466 L180 478 L232 464 L286 478 L338 468 L390 476 V844 H0 Z"
+              fill="#E9EAEB"
+            />
+            <path
+              d="M0 476 L40 468 L84 480 L130 466 L180 478 L232 464 L286 478 L338 468 L390 476"
+              fill="none"
+              stroke="#BB9951"
+              stroke-width="3"
+            />
+            <g fill="#141313">
+              <text x="24" y="560" font-size="52" fill="#A16B18">01</text>
+              <text x="24" y="622" font-size="42" letter-spacing="-0.5">Everfield</text>
+              <text x="24" y="668" font-size="42" letter-spacing="-0.5">Interactive</text>
+              <text x="24" y="704" font-size="13">Chapter 01 of 11</text>
+              <text x="24" y="748" font-size="17">[PITCH: one or two lines,</text>
+              <text x="24" y="772" font-size="17">from Kiefy]</text>
+            </g>
+
+            <!-- The frame keeps three items -->
+            <g fill="none" stroke="#E9EAEB" stroke-width="1.5">
+              <circle cx="46" cy="46" r="22" />
+              <circle cx="344" cy="46" r="22" />
+              <path d="M344 24 V32 M344 60 V68 M322 46 H330 M358 46 H366" />
+            </g>
+            <rect
+              x="300"
+              y="414"
+              width="66"
+              height="44"
+              fill="#141313"
+              stroke="#E9EAEB"
+              stroke-width="1.5"
+            />
+            <g fill="#E9EAEB" font-size="12" text-anchor="middle">
+              <text x="46" y="50">Mark</text>
+              <text x="344" y="50">Dial</text>
+              <text x="333" y="440">Options</text>
+            </g>
+          </svg>
+          <figcaption>390 by 844. The world on top, the plate as a sheet below.</figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>
