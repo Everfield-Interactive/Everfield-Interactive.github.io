@@ -8,7 +8,7 @@ paths:
 
 Summary of Section 7 of `docs/BUILD_GUIDE.md`.
 
-- Kiefy makes every sound. Never produce or ship generated audio.
+- Kiefy makes every sound. Never produce final audio, and never ship generated sound. The one generated sound is the debug marker click in 7.1, which is stripped from production builds.
 - The engine uses the Web Audio API with no audio library. Kiefy should be able to read the signal path in one file.
 - Sources feed four buses (`music`, `ambience`, `world`, `ui`), then a master gain, a safety limiter and the output.
 - The audio context is created at the moment the visitor switches Sound on, and never before.

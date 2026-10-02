@@ -14,6 +14,6 @@ Summary of Sections 5.2, 5.3, 8.4, 8.7 and 8.8 of `docs/BUILD_GUIDE.md`. The eff
 - Glow is kept for the core and the geode. Never put glow on everything.
 - Output is sRGB. Painted materials are drawn without tone mapping.
 - The post chain runs in this order: selective bloom, optional painterly filter, colour grade, canvas grain, light vignette.
-- Colours come from the tokens in `src/styles/tokens.css` and the style bible. Geode covers less than about 5% of an interface frame.
+- Colours come from the tokens in `src/styles/tokens.css` and the style bible. Geode covers less than about 5% of any frame.
 - Every effect states its cost on each quality tier and stays inside the budgets in 8.8.
 - Every effect has a reduced-motion behaviour.

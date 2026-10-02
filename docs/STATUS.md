@@ -13,12 +13,13 @@ Phase 0, preflight and scaffold. Gate 0 is not yet proposed.
 - `LICENSE` and `README.md` carry the interim ownership line (D21, D35).
 - The build guide, version 0.5, is committed unchanged.
 - `everfield-source/` exists with its five folders and three inboxes.
-- The working documents, the workstream briefs and the Claude Code configuration exist.
+- The working documents, the workstream briefs and the Claude Code configuration exist, and three reviewers have checked them.
+- The scaffold files for step 6 are written: the app shell, the holding page, the build and screenshot scripts, the configuration and the deploy workflow. They are not committed, because none of them has been run yet.
 
 ## Next
 
-1. Scaffold the site: packages, configuration, the app shell and the holding page.
-2. Build the screenshot harness and run the local checks.
+1. Install the build tools and run lint, type check, the tests and both builds for the first time.
+2. Run the screenshot harness and view every capture.
 3. Show Kiefy the holding page captures.
 4. Push the branch, then move `main` and check the live address.
 5. Create the `vfx` and `legal` worktrees.
@@ -28,7 +29,8 @@ Phase 0, preflight and scaffold. Gate 0 is not yet proposed.
 
 | Item | Waits for |
 | --- | --- |
-| The scaffold | Kiefy installs Node 24 LTS |
+| The package install and every npm script | Kiefy installs Node 24 LTS. The machine has 20.19.0 |
+| The stage tests and both builds | The `resolveStage` function in `scripts/site-stage.mjs` |
 | The first push to `main` | Kiefy switches the Pages source to GitHub Actions and approves the holding page captures |
 | The final preflight | Kiefy installs ffmpeg, the KTX tools and Firefox, and opens Blender on an empty file |
 
@@ -47,6 +49,7 @@ None yet.
 
 ## Notes
 
-- Work is on the branch `phase-0-scaffold`.
+- Work is on the branch `phase-0-scaffold`. Nothing has been pushed.
+- The published output is built by `npm run build:pages` into `dist-pages/`. The Phase 0 plan called this script `build:holding`. The name changed because the same script builds the site once the stage is `full`.
 - Section 2.2 of the guide still lists Q9, Q10 and Q11 as open. Kiefy answered them on 2 October 2026 (D22, D25, D24). Changes to the guide come through Kiefy.
 - The guide's SHA-256 at its first commit is `d06b368b6b0b01ac4ab19bc3dd1cf97da0a9798167b3c219b3fe29e79afac677`. Each gate checks that it has not changed without Kiefy.

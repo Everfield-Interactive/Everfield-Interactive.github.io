@@ -4,7 +4,7 @@ Approved decisions, in order. This file is append only. A changed decision gets 
 
 ## D1 to D20
 
-Made by Kiefy before version 0.4 of the build guide and copied from Section 2.1 on 2 October 2026.
+Made by Kiefy and recorded in Section 2.1 of the build guide, version 0.5. Copied here on 2 October 2026.
 
 | # | Subject | Outcome |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ Made by Kiefy on 2 October 2026, in answer to the onboarding report and the Phas
 
 | # | Decision | Why |
 | --- | --- | --- |
-| D21 | `LICENSE` holds the ownership notice in place of the MIT text. The repository history is left alone | The earlier commit holds only a one-line README, and rewriting history is destructive |
+| D21 | `LICENSE` holds the ownership notice in place of the MIT text. The repository history is left alone | Apart from the MIT text, the earlier commit holds only a one-line README, and rewriting history is destructive |
 | D22 | The repository belongs to the organisation Everfield-Interactive and publishes at the root of `everfield-interactive.github.io`. This answers Q9 in Section 2.2 of the guide | GitHub serves a repository at the root only when its owner matches its name |
 | D23 | The public address shows only a holding page until Gate 8. The scaffold and the holding page may go to `main` before Gate 0 | Gate 0 needs a live page, and the site opens only when it is finished |
 | D24 | `everfield-source/` has one fixed location on Kiefy's computer. The path is recorded only in `.claude/settings.local.json`, which is never committed. This answers Q11 in Section 2.2 of the guide | No local path enters the repository |
@@ -51,7 +51,7 @@ Made by Kiefy on 2 October 2026, in answer to the onboarding report and the Phas
 | D32 | The holding page carries a `noindex` tag until Gate 8 | Search results stay empty until the site replaces the holding page |
 | D33 | `review/shots/` is gitignored. Each gate commits a pack in `review/gate-<n>/` with only the frames its review cites | Committing every run would grow the repository and publish unfinished frames |
 | D34 | Version 0.5 of the build guide is adopted, with the rulings in its Appendix E on findings G1 to G10 and C1 to C17 | The rulings settle the onboarding report |
-| D35 | `LICENSE` and `README.md` carry the interim line from Section 8.13 and nothing more | Any further legal wording comes from the legal workstream with Kiefy's approval |
+| D35 | `LICENSE` holds the interim line from Section 8.13 and nothing more. `README.md` holds a title and the same line | Any further legal wording comes from the legal workstream with Kiefy's approval |
 | D36 | Commits carry no co-author trailer | Kiefy's choice for the public history |
 | D37 | Stack packages are installed in the phase that first uses each one. Phase 0 installs only the build, lint and screenshot tools. This changes Section 8.1 | The holding page uses none of the runtime libraries, and versions pinned early would be stale by the time they are needed |
 | D38 | TypeScript is pinned to 6.0.3 until type-aware linting supports version 7. This changes Section 8.1 | `typescript-eslint` supports TypeScript below 6.1 only |

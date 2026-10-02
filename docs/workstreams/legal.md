@@ -53,7 +53,7 @@ Section 14.1 of the guide also names `legal/`. Phase 0 reads that as the drafts 
 
 ## What is already in place
 
-- `LICENSE` and `README.md` carry the interim line from Section 8.13 and nothing more (D35).
+- `LICENSE` holds the interim line from Section 8.13 and nothing more. `README.md` holds a title and the same line (D35).
 - `npm run licences` generates the package list in `THIRD_PARTY_NOTICES.md` from the lockfile. The file holds no other wording yet.
 - The repository is public, and Kiefy has accepted that other GitHub users can view and fork it (D14, D25).
 - The public address shows a holding page with the interim line until Gate 8 (D23).

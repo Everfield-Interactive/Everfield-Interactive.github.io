@@ -6,7 +6,7 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 
 ## Q12. Where does the full secrets list live?
 
-- Needed by: Gate 3
+- Needed by: Phase 3, before the list is written
 - Section 8.10 says the shipped file holds only what the site needs, and the full list stays in the working documents. `docs/` is public (D25).
 - Options: (1) The full list lives in `everfield-source/`, outside the repository. (2) The full list lives in `docs/`.
 - Recommended: 1. A public list would show how every secret is found.
@@ -23,12 +23,6 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 - Sections 8.5, 9.3 and 9.6 name a world file, an export collection for each chapter, and a file for each asset.
 - Options: (1) One small world file with the camera clips and the empties, and one file for each chapter. (2) One world file that holds everything. (3) One file for each asset.
 - Recommended: 1. It matches the transfer budget for each chapter and lets each chapter load as the visitor approaches.
-
-## Q15. Which file is the source for licences?
-
-- Needed by: Phase 1
-- Options: (1) The lockfile is the source for packages, and `npm run licences` writes them into `THIRD_PARTY_NOTICES.md`. `docs/licences.md` is the lead's record of everything that has no lockfile entry: fonts, Poly Haven assets and tools. The legal workstream copies from it into the notices. (2) One file holds everything, kept by hand.
-- Recommended: 1. The package list cannot drift from what is installed.
 
 ## Q16. Does the fixed frame count towards the limit of two kinds of ornament?
 
@@ -52,8 +46,8 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 ## Q19. How is portrait framing authored?
 
 - Needed by: Phase 3
-- Section 6.7 gives each chapter its own portrait framing, and Section 8.5 drives the camera from baked clips.
-- Options: (1) One set of clips. Each rest point carries a portrait field of view and a target offset as custom properties in Blender, and the site blends them in by chapter weight. (2) A second set of clips authored for portrait.
+- Section 6.7 gives each chapter its own portrait framing, as camera targets and a field of view stored with the world data. Section 8.5 puts it in `content/world.json`, which the export script writes from Blender, and drives the camera from baked clips. The guide does not say where the values are authored or how the site applies them.
+- Options: (1) One set of clips. Each rest point carries a portrait field of view and a target offset as custom properties in Blender, and the site blends them in by chapter weight. (2) A second set of clips authored for portrait. This changes Section 6.7.
 - Recommended: 1. It halves the camera work, and the values live in Blender, so the export script never overwrites them.
 
 ## Q20. Which routes join the world and the main page, and where is the ledger on phones?
@@ -65,7 +59,7 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 
 ## Q21. What do "Text size: large" and "Contrast: high" change?
 
-- Needed by: Phase 4
+- Needed by: Phase 3
 - Options: (1) Large sets the base size to 125%, and the layouts reflow. High contrast puts a solid ground behind all text and keeps every text pair at 7:1 or better. (2) Both options are dropped, and the site relies on browser zoom and the system settings.
 - Recommended: 1. Both values are tested in the UI lab before Gate 4.
 
@@ -88,3 +82,10 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 - Section 14.1 gives the legal workstream `legal/`, and Section 14.5 puts the drafts in `everfield-source/legal/`. Section 8.2 lists no `legal/` folder in the repository.
 - Options: (1) `legal/` means `everfield-source/legal/`. The repository holds only `content/legal/` and the notice files. (2) The repository gets its own `legal/` folder.
 - Recommended: 1. Phase 0 follows this reading and creates no `legal/` folder in the repository.
+
+## Q25. Does the lead build need a brief in `docs/workstreams/`?
+
+- Needed by: Phase 1
+- Section 14.2 gives each workstream a brief. Phase 0 and the checklist in 13.6 name only the two sibling briefs.
+- Options: (1) `CLAUDE.md` and `docs/STATUS.md` serve as the lead's brief. (2) Add `docs/workstreams/lead.md` with the lead's scope, folders and current tasks.
+- Recommended: 1. Both files already load at the start of every lead session.

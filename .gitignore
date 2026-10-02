@@ -8,6 +8,7 @@ references/
 # Dependencies and build output
 node_modules/
 dist/
+dist-pages/
 
 # Screenshot runs and test output. Gate packs in review/gate-<n>/ are committed.
 review/shots/
