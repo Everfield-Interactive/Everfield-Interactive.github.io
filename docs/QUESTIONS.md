@@ -89,3 +89,31 @@ None of these blocks Gate 0. They come from the onboarding report and are not ru
 - Section 14.2 gives each workstream a brief. Phase 0 and the checklist in 13.6 name only the two sibling briefs.
 - Options: (1) `CLAUDE.md` and `docs/STATUS.md` serve as the lead's brief. (2) Add `docs/workstreams/lead.md` with the lead's scope, folders and current tasks.
 - Recommended: 1. Both files already load at the start of every lead session.
+
+## Q26. Where does the EULA appear?
+
+- Needed by: Gate 7
+- D8 asks for a EULA. Section 6.6 puts the terms, the privacy notice and the ownership notice in the Legal section and does not name the EULA. The legal workstream raised this.
+- Options: (1) The EULA is a fourth text in the Legal section. (2) The EULA and the terms of service are one text.
+- Recommended: 2. The site offers no download, so the two texts would cover the same ground. The legal workstream drafts it either way.
+
+## Q27. Do the landing page and the options panel link to the privacy notice?
+
+- Needed by: Phase 4
+- The site first stores something when a visitor sets an option on the landing page. The legal workstream raised this.
+- Options: (1) A small link to the privacy notice sits beside the options on the landing page and in the options panel. (2) The privacy notice is reached only through the Legal section of the main page.
+- Recommended: 1. A visitor can read what is stored at the place where it is stored.
+
+## Q28. Which address does the trailer load from?
+
+- Needed by: Phase 4
+- Section 6.6 loads nothing from YouTube until the visitor presses play. The legal workstream needs to know which address loads then.
+- Options: (1) `youtube-nocookie.com`, YouTube's privacy-enhanced address. (2) `youtube.com`.
+- Recommended: 1. It sets fewer cookies before playback, which keeps the privacy notice shorter.
+
+## Q29. Does the holding page need a privacy link before Gate 7?
+
+- Needed by: Kiefy's choice
+- The holding page stores nothing and runs no script. The host, GitHub Pages, logs visitors' IP addresses. The privacy notice is due at Gate 7. Adding a link would change the holding page that D39 approved.
+- Options: (1) The holding page stays as it is until Gate 7. (2) The legal workstream drafts a short privacy line now, and the holding page links to it once Kiefy approves the wording.
+- Recommended: 1 for now. Kiefy may want a qualified person's view, which is a question for the legal workstream once it has its facts.

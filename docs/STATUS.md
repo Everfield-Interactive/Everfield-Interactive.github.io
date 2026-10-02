@@ -4,31 +4,33 @@ Rewritten at the end of every session. Last updated on 2 October 2026.
 
 ## Phase
 
-Phase 1, style bible. Gate 0 was approved with one change on 2 October 2026 (D40).
+Phase 1, style bible. Gate 1 is proposed in `docs/gates/gate-1.md` and waits for Kiefy.
 
-## Done in Phase 0
+## Done in Phase 1
 
-- The repository is guarded, and git sees no reference image.
-- `LICENSE` and `README.md` carry the interim ownership line (D21, D35).
-- The scaffold is in place, and lint, type check, the tests and both builds pass locally and on GitHub.
-- The holding page is live at `https://everfield-interactive.github.io/` (D39).
-- The `vfx` and `legal` worktrees exist, each with the guide, its brief and the reference images.
-- The Gate 0 review is in `docs/gates/gate-0.md`, with its pack in `review/gate-0/`.
+- All 27 reference images were studied, and every colour token was measured against the image it cites.
+- `docs/style-bible.md` is written, with seven proposals for Kiefy.
+- `src/styles/tokens.css` holds every colour token.
+- `lab/palette/` shows the tokens, the text pairs and the cobalt test.
+- `lab/type/` sets four pairings in text that already exists.
+- `docs/world-map.md` and `docs/world-map.svg` show every chapter, path and direction.
+- `lab/layout/field.html` is the layout sheet for the Field.
+- `docs/cue-list.md` is the draft cue list.
+- The legal workstream ran its kickoff and reported what it needs.
 
-## Next in Phase 1
+## Next
 
-1. Study every image in `references/` and write `docs/style-bible.md`.
-2. Build the type test and the palette page in `lab/`.
-3. Draw the world map with every chapter, path and direction.
-4. Draft the cue list and the layout sheet for the Field.
-5. Write the Gate 1 review and stop for Kiefy.
+1. Kiefy rules on the ten decisions in the Gate 1 review.
+2. The chosen fonts are hosted with the site, and the others are removed.
+3. Phase 2 starts: the Field in Blender, then in the browser.
 
 ## Blocked
 
 | Item | Waits for |
 | --- | --- |
-| Phase 2 texture work | Kiefy installs KTX-Software 4.4.2 from its releases page on GitHub. winget has no package for it |
-| The type test with real fonts | Kiefy's go-ahead to download the six candidate fonts named in Section 5.4 |
+| Gate 1 | Kiefy's decisions |
+| Phase 2 texture work | KTX-Software 4.4.2, installed from its releases page on GitHub |
+| Legal drafting | Seventeen facts from Kiefy. The four that unblock most are in the lead's inbox notice of 2 October |
 
 ## Environment
 
@@ -48,8 +50,9 @@ None yet.
 
 ## Notes
 
-- Phase 1 work is on the branch `phase-1-style-bible`.
+- Phase 1 work is on the branch `phase-1-style-bible`. It is not pushed.
+- `main` holds Phase 0 and the Gate 0 review. The public address shows only the holding page.
 - Between gates the lead keeps working without routine stops (D41).
-- The published output is built by `npm run build:pages` into `dist-pages/`.
+- Open questions Q12 to Q29 are in `docs/QUESTIONS.md`. Q26 to Q29 came from the legal workstream.
 - Section 2.2 of the guide still lists Q9, Q10 and Q11 as open. Kiefy answered them on 2 October 2026 (D22, D25, D24). Changes to the guide come through Kiefy.
 - The guide's SHA-256 at its first commit is `d06b368b6b0b01ac4ab19bc3dd1cf97da0a9798167b3c219b3fe29e79afac677`. Each gate checks that it has not changed without Kiefy.
