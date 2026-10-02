@@ -1,0 +1,23 @@
+# Taste references. Never committed and never shipped.
+references/
+
+# Claude Code: sibling worktrees and local settings
+.claude/worktrees/
+.claude/settings.local.json
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# Screenshot runs and test output. Gate packs in review/gate-<n>/ are committed.
+review/shots/
+test-results/
+playwright-report/
+
+# Source files that live outside the repository
+*.blend
+*.blend1
+*.wav
+
+# Local environment files
+.env*

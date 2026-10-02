@@ -1,0 +1,11 @@
+# Text files keep LF endings on every machine, so file hashes match everywhere.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.webp binary
+*.glb binary
+*.ktx2 binary
+*.woff2 binary
+*.opus binary
+*.m4a binary
