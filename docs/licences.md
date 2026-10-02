@@ -50,3 +50,5 @@ None yet. Poly Haven CC0 HDRIs and textures are approved in advance (D9).
 
 | Item | Terms | Checked on |
 | --- | --- | --- |
+| GitHub Pages | GitHub's terms of service and the GitHub Pages limits. The legal workstream checks them against the site's purpose | 2 October 2026 |
+| actions/checkout, actions/setup-node, actions/configure-pages, actions/upload-pages-artifact, actions/deploy-pages | MIT. They run on GitHub's servers during the build, and none of their code ships to a visitor | 2 October 2026 |
